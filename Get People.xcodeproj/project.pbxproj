@@ -7,25 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		848C217FDEDF09CAB5EE3CA1 /* Pods_Get_People.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEEBB295B4B40BC672A5A9CF /* Pods_Get_People.framework */; };
 		84FD4C742774AB090071B3E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C732774AB090071B3E7 /* AppDelegate.swift */; };
 		84FD4C762774AB090071B3E7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C752774AB090071B3E7 /* SceneDelegate.swift */; };
-		84FD4C782774AB090071B3E7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C772774AB090071B3E7 /* ViewController.swift */; };
 		84FD4C7B2774AB090071B3E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FD4C792774AB090071B3E7 /* Main.storyboard */; };
 		84FD4C7E2774AB090071B3E7 /* Get_People.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C7C2774AB090071B3E7 /* Get_People.xcdatamodeld */; };
 		84FD4C802774AB0B0071B3E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84FD4C7F2774AB0B0071B3E7 /* Assets.xcassets */; };
 		84FD4C832774AB0B0071B3E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FD4C812774AB0B0071B3E7 /* LaunchScreen.storyboard */; };
+		84FD4C8C2774AC240071B3E7 /* GetPeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C8B2774AC240071B3E7 /* GetPeopleTableViewController.swift */; };
+		84FD4C8F2774AC780071B3E7 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C8E2774AC780071B3E7 /* People.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		84FD4C702774AB090071B3E7 /* Get People.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Get People.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		84FD4C732774AB090071B3E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84FD4C752774AB090071B3E7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		84FD4C772774AB090071B3E7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		84FD4C7A2774AB090071B3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		84FD4C7D2774AB090071B3E7 /* Get_People.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Get_People.xcdatamodel; sourceTree = "<group>"; };
 		84FD4C7F2774AB0B0071B3E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		84FD4C822774AB0B0071B3E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		84FD4C842774AB0B0071B3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		84FD4C8B2774AC240071B3E7 /* GetPeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPeopleTableViewController.swift; sourceTree = "<group>"; };
+		84FD4C8E2774AC780071B3E7 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		CEEBB295B4B40BC672A5A9CF /* Pods_Get_People.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Get_People.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D49CDD45ACF86FD57385B635 /* Pods-Get People.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get People.debug.xcconfig"; path = "Target Support Files/Pods-Get People/Pods-Get People.debug.xcconfig"; sourceTree = "<group>"; };
+		FFB44029807AC578BBE6B684 /* Pods-Get People.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get People.release.xcconfig"; path = "Target Support Files/Pods-Get People/Pods-Get People.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +39,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				848C217FDEDF09CAB5EE3CA1 /* Pods_Get_People.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		70F9BF91CF0BC2FB828B0BDF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D49CDD45ACF86FD57385B635 /* Pods-Get People.debug.xcconfig */,
+				FFB44029807AC578BBE6B684 /* Pods-Get People.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		84FD4C672774AB090071B3E7 = {
 			isa = PBXGroup;
 			children = (
 				84FD4C722774AB090071B3E7 /* Get People */,
 				84FD4C712774AB090071B3E7 /* Products */,
+				70F9BF91CF0BC2FB828B0BDF /* Pods */,
+				87EC92882C4FF8D27EF627FE /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -58,9 +76,10 @@
 		84FD4C722774AB090071B3E7 /* Get People */ = {
 			isa = PBXGroup;
 			children = (
+				84FD4C8D2774AC5B0071B3E7 /* Model */,
+				84FD4C8A2774ABF90071B3E7 /* View Controllers */,
 				84FD4C732774AB090071B3E7 /* AppDelegate.swift */,
 				84FD4C752774AB090071B3E7 /* SceneDelegate.swift */,
-				84FD4C772774AB090071B3E7 /* ViewController.swift */,
 				84FD4C792774AB090071B3E7 /* Main.storyboard */,
 				84FD4C7F2774AB0B0071B3E7 /* Assets.xcassets */,
 				84FD4C812774AB0B0071B3E7 /* LaunchScreen.storyboard */,
@@ -70,6 +89,30 @@
 			path = "Get People";
 			sourceTree = "<group>";
 		};
+		84FD4C8A2774ABF90071B3E7 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				84FD4C8B2774AC240071B3E7 /* GetPeopleTableViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		84FD4C8D2774AC5B0071B3E7 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				84FD4C8E2774AC780071B3E7 /* People.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		87EC92882C4FF8D27EF627FE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CEEBB295B4B40BC672A5A9CF /* Pods_Get_People.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -77,9 +120,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84FD4C872774AB0B0071B3E7 /* Build configuration list for PBXNativeTarget "Get People" */;
 			buildPhases = (
+				4364C0BCBAB93F23E6ED1C25 /* [CP] Check Pods Manifest.lock */,
 				84FD4C6C2774AB090071B3E7 /* Sources */,
 				84FD4C6D2774AB090071B3E7 /* Frameworks */,
 				84FD4C6E2774AB090071B3E7 /* Resources */,
+				BA02CE65AE1D5155D5BEE4BA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,15 +181,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4364C0BCBAB93F23E6ED1C25 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Get People-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA02CE65AE1D5155D5BEE4BA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Get People/Pods-Get People-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Get People/Pods-Get People-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Get People/Pods-Get People-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		84FD4C6C2774AB090071B3E7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84FD4C782774AB090071B3E7 /* ViewController.swift in Sources */,
 				84FD4C742774AB090071B3E7 /* AppDelegate.swift in Sources */,
+				84FD4C8C2774AC240071B3E7 /* GetPeopleTableViewController.swift in Sources */,
 				84FD4C762774AB090071B3E7 /* SceneDelegate.swift in Sources */,
 				84FD4C7E2774AB090071B3E7 /* Get_People.xcdatamodeld in Sources */,
+				84FD4C8F2774AC780071B3E7 /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,6 +376,7 @@
 		};
 		84FD4C882774AB0B0071B3E7 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D49CDD45ACF86FD57385B635 /* Pods-Get People.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -298,6 +387,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -315,6 +405,7 @@
 		};
 		84FD4C892774AB0B0071B3E7 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFB44029807AC578BBE6B684 /* Pods-Get People.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -325,6 +416,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
