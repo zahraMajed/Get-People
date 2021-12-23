@@ -16,6 +16,8 @@
 		84FD4C832774AB0B0071B3E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84FD4C812774AB0B0071B3E7 /* LaunchScreen.storyboard */; };
 		84FD4C8C2774AC240071B3E7 /* GetPeopleTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C8B2774AC240071B3E7 /* GetPeopleTableViewController.swift */; };
 		84FD4C8F2774AC780071B3E7 /* People.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C8E2774AC780071B3E7 /* People.swift */; };
+		84FD4C912774B8AD0071B3E7 /* GetFilmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C902774B8AD0071B3E7 /* GetFilmTableViewController.swift */; };
+		84FD4C932774BA0F0071B3E7 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C922774BA0F0071B3E7 /* Film.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +31,8 @@
 		84FD4C842774AB0B0071B3E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84FD4C8B2774AC240071B3E7 /* GetPeopleTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPeopleTableViewController.swift; sourceTree = "<group>"; };
 		84FD4C8E2774AC780071B3E7 /* People.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = People.swift; sourceTree = "<group>"; };
+		84FD4C902774B8AD0071B3E7 /* GetFilmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetFilmTableViewController.swift; sourceTree = "<group>"; };
+		84FD4C922774BA0F0071B3E7 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		CEEBB295B4B40BC672A5A9CF /* Pods_Get_People.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Get_People.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49CDD45ACF86FD57385B635 /* Pods-Get People.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get People.debug.xcconfig"; path = "Target Support Files/Pods-Get People/Pods-Get People.debug.xcconfig"; sourceTree = "<group>"; };
 		FFB44029807AC578BBE6B684 /* Pods-Get People.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get People.release.xcconfig"; path = "Target Support Files/Pods-Get People/Pods-Get People.release.xcconfig"; sourceTree = "<group>"; };
@@ -93,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				84FD4C8B2774AC240071B3E7 /* GetPeopleTableViewController.swift */,
+				84FD4C902774B8AD0071B3E7 /* GetFilmTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -101,6 +106,7 @@
 			isa = PBXGroup;
 			children = (
 				84FD4C8E2774AC780071B3E7 /* People.swift */,
+				84FD4C922774BA0F0071B3E7 /* Film.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -228,11 +234,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				84FD4C912774B8AD0071B3E7 /* GetFilmTableViewController.swift in Sources */,
 				84FD4C742774AB090071B3E7 /* AppDelegate.swift in Sources */,
 				84FD4C8C2774AC240071B3E7 /* GetPeopleTableViewController.swift in Sources */,
 				84FD4C762774AB090071B3E7 /* SceneDelegate.swift in Sources */,
 				84FD4C7E2774AB090071B3E7 /* Get_People.xcdatamodeld in Sources */,
 				84FD4C8F2774AC780071B3E7 /* People.swift in Sources */,
+				84FD4C932774BA0F0071B3E7 /* Film.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
