@@ -10,19 +10,11 @@ import Alamofire
 
 class GetFilmTableViewController: UITableViewController {
     
-    var filmArray: [String] = []
+    var filmArray: [Film] = []
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        AF.request("https://swapi.dev/api/films/?format=json").responseDecodable(of: FilmRespons.self) { response in
-            let x = response.value
-            if let x = x {
-                for film in x.results {
-                    self.filmArray.append(film.title)
-                }
-                self.tableView.reloadData()
-            }
-        }
+        attemptToFetchFilmAPI()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -31,8 +23,23 @@ class GetFilmTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "filmCell", for: indexPath)
-        cell.textLabel?.text = filmArray[indexPath.row]
+        cell.textLabel?.text = filmArray[indexPath.row].title
         return cell
     }
-
+    
+    func attemptToFetchFilmAPI(){
+        FilmAPI.getFilmAPIResult { [weak self] (film, error) in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                return
+            }
+            guard let film = film else {
+                return
+            }
+            self?.filmArray = film
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
+    }
 }

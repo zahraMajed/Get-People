@@ -10,20 +10,11 @@ import Alamofire
 
 class GetPeopleTableViewController: UITableViewController {
     
-    var peopleArray: [String] = []
+    var peopleArray: [People] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        AF.request("https://swapi.dev/api/people/?format=json").responseDecodable(of: PeopleRespons.self) { response in
-            let x = response.value
-            if let x = x {
-                for person in x.results {
-                    self.peopleArray.append(person.name)
-                }
-                self.tableView.reloadData()
-            }
-        }
+        attemptToFetchPeopleAPI()
     }
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -32,8 +23,24 @@ class GetPeopleTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "personCell", for: indexPath)
-        cell.textLabel?.text = peopleArray[indexPath.row]
+        cell.textLabel?.text = peopleArray[indexPath.row].name
         return cell
     }
-
+    
+    func attemptToFetchPeopleAPI(){
+        PeopleAPI.getPeopleAPIResult { [weak self] (people, error) in
+            if let error = error {
+                print("Error: \(error.localizedDescription)")
+                return
+            }
+            guard let people = people else {
+                return
+            }
+            self?.peopleArray = people
+            DispatchQueue.main.async {
+                self?.tableView.reloadData()
+            }
+        }
+    }
 }
+
