@@ -42,4 +42,19 @@ class GetFilmTableViewController: UITableViewController {
             }
         }
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "fromFilm", sender: indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if sender is IndexPath {
+            let destination = segue.destination as! DetailsViewController
+            let indexP = sender as! IndexPath
+            print(indexP.row)
+            print(filmArray[indexP.row])
+            destination.filmArray.append(filmArray[indexP.row])
+            destination.type = "Film"
+        }
+    }
 }

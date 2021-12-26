@@ -42,5 +42,20 @@ class GetPeopleTableViewController: UITableViewController {
             }
         }
     }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        performSegue(withIdentifier: "fromPeople", sender: indexPath)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if sender is IndexPath {
+            let destination = segue.destination as! DetailsViewController
+            let indexP = sender as! IndexPath
+            print(indexP.row)
+            print(peopleArray[indexP.row])
+            destination.peopleArrayD.append(peopleArray[indexP.row])
+            destination.type = "People"
+        }
+    }
 }
 

@@ -13,4 +13,7 @@ struct PeopleRespons: Decodable {
 
 struct People: Decodable {
     var name: String
+    var birth_year: String
+    var gender: String
+    var mass:String
 }

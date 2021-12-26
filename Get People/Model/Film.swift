@@ -13,4 +13,7 @@ struct FilmRespons: Decodable {
 
 struct Film: Decodable {
     var title: String
+    var opening_crawl:String
+    var release_date:String
+    var director:String
 }

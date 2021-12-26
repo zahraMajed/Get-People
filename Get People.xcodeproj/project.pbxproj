@@ -20,6 +20,7 @@
 		84FD4C932774BA0F0071B3E7 /* Film.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C922774BA0F0071B3E7 /* Film.swift */; };
 		84FD4C962777006A0071B3E7 /* FilmAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C952777006A0071B3E7 /* FilmAPI.swift */; };
 		84FD4C98277700890071B3E7 /* PeopleAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C97277700890071B3E7 /* PeopleAPI.swift */; };
+		84FD4C9A277737390071B3E7 /* DetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84FD4C99277737390071B3E7 /* DetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -37,6 +38,7 @@
 		84FD4C922774BA0F0071B3E7 /* Film.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Film.swift; sourceTree = "<group>"; };
 		84FD4C952777006A0071B3E7 /* FilmAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilmAPI.swift; sourceTree = "<group>"; };
 		84FD4C97277700890071B3E7 /* PeopleAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PeopleAPI.swift; sourceTree = "<group>"; };
+		84FD4C99277737390071B3E7 /* DetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsViewController.swift; sourceTree = "<group>"; };
 		CEEBB295B4B40BC672A5A9CF /* Pods_Get_People.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Get_People.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D49CDD45ACF86FD57385B635 /* Pods-Get People.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get People.debug.xcconfig"; path = "Target Support Files/Pods-Get People/Pods-Get People.debug.xcconfig"; sourceTree = "<group>"; };
 		FFB44029807AC578BBE6B684 /* Pods-Get People.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Get People.release.xcconfig"; path = "Target Support Files/Pods-Get People/Pods-Get People.release.xcconfig"; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 			children = (
 				84FD4C8B2774AC240071B3E7 /* GetPeopleTableViewController.swift */,
 				84FD4C902774B8AD0071B3E7 /* GetFilmTableViewController.swift */,
+				84FD4C99277737390071B3E7 /* DetailsViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -257,6 +260,7 @@
 				84FD4C7E2774AB090071B3E7 /* Get_People.xcdatamodeld in Sources */,
 				84FD4C8F2774AC780071B3E7 /* People.swift in Sources */,
 				84FD4C932774BA0F0071B3E7 /* Film.swift in Sources */,
+				84FD4C9A277737390071B3E7 /* DetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
